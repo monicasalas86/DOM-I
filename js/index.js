@@ -50,6 +50,24 @@ for(let i = 0; i < navArray.length; i++){
   navBar[i].style.color = 'green';
 }
 
+  // appendChild
+const navEl = document.querySelector('nav');
+
+
+const nav1 = document.createElement('a');
+nav1.textContent = 'After';
+nav1.style.color = 'green';
+
+navEl.appendChild(nav1);
+
+  //prepend
+
+const nav2 = document.createElement('a');
+nav2.textContent = 'Before';
+nav2.style.color = 'green';
+
+navEl.prepend(nav2);
+
 
 // CTA SECTION
 const ctaText = document.querySelector('.cta-text h1');
