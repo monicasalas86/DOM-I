@@ -60,8 +60,29 @@ const ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
 // MAIN CONTENT
-// const mainContent = document.querySelectorAll('.text-content h4 p');
-// //console.log(Object.values(siteContent["main-content"])[1]);
-// contentArray = Array.from(mainContent);
 
-// contentArray.forEach(elem => )
+// top content
+const featuresH4 = document.querySelector('.top-content .text-content:nth-of-type(1) h4');
+const featuresP = document.querySelector('.top-content .text-content:nth-of-type(1) p');
+featuresH4.textContent = siteContent['main-content']['features-h4'];
+featuresP.textContent = siteContent['main-content']['features-content'];
+
+const aboutH4 = document.querySelector('.top-content .text-content:nth-of-type(2) h4');
+const aboutP = document.querySelector('.top-content .text-content:nth-of-type(2) p');
+aboutH4.textContent = siteContent['main-content']['about-h4'];
+aboutP.textContent = siteContent['main-content']['about-content'];
+
+const servicesH4 = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4');
+const servicesP = document.querySelector('.bottom-content .text-content:nth-of-type(1) p');
+servicesH4.textContent = siteContent['main-content']['services-h4'];
+servicesP.textContent = siteContent['main-content']['services-content'];
+
+const productH4 = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4');
+const productP = document.querySelector('.bottom-content .text-content:nth-of-type(2) p');
+productH4.textContent = siteContent['main-content']['product-h4'];
+productP.textContent = siteContent['main-content']['product-content'];
+
+const visionH4 = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
+const visionP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
+visionH4.textContent = siteContent['main-content']['vision-h4'];
+visionP.textContent = siteContent['main-content']['vision-content'];
