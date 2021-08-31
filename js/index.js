@@ -41,7 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// nav bar
+// NAV BAR
 const navBar = document.querySelectorAll('nav a');
 const navArray = Array.from(navBar);
 // console.log(Object.values(siteContent.nav)[1]);
@@ -49,7 +49,7 @@ for(let i = 0; i < navArray.length; i++){
   navArray[i].textContent = Object.values(siteContent.nav)[i];
 }
 
-// CTA Section
+// CTA SECTION
 const ctaText = document.querySelector('.cta-text h1');
 ctaText.textContent = siteContent['cta']['h1'];
 
@@ -60,8 +60,6 @@ const ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
 
 // MAIN CONTENT
-
-// top content
 const featuresH4 = document.querySelector('.top-content .text-content:nth-of-type(1) h4');
 const featuresP = document.querySelector('.top-content .text-content:nth-of-type(1) p');
 featuresH4.textContent = siteContent['main-content']['features-h4'];
@@ -86,3 +84,23 @@ const visionH4 = document.querySelector('.bottom-content .text-content:nth-of-ty
 const visionP = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
 visionH4.textContent = siteContent['main-content']['vision-h4'];
 visionP.textContent = siteContent['main-content']['vision-content'];
+
+const midImg = document.querySelector('#middle-img');
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+// CONTACT SECTION
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+
+const contactAdd = document.querySelector('.contact p:nth-of-type(1)');
+const contactPh = document.querySelector('.contact p:nth-of-type(2)');
+const contactEm = document.querySelector('.contact p:nth-of-type(3)');
+
+contactAdd.textContent = siteContent['contact']['address'];
+contactPh.textContent = siteContent['contact']['phone'];
+contactEm.textContent = siteContent['contact']['email'];
+
+//footer
+
+const footerC = document.querySelector('footer p');
+footerC.textContent = siteContent['footer']['copyright'];
