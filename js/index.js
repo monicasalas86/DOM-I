@@ -47,7 +47,9 @@ const navArray = Array.from(navBar);
 // console.log(Object.values(siteContent.nav)[1]);
 for(let i = 0; i < navArray.length; i++){
   navArray[i].textContent = Object.values(siteContent.nav)[i];
+  navBar[i].style.color = 'green';
 }
+
 
 // CTA SECTION
 const ctaText = document.querySelector('.cta-text h1');
@@ -104,3 +106,4 @@ contactEm.textContent = siteContent['contact']['email'];
 
 const footerC = document.querySelector('footer p');
 footerC.textContent = siteContent['footer']['copyright'];
+
